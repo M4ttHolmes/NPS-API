@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>National Park Info Center</title>
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <div class="overlay">
+            <h1 class="display-4">Welcome to the National Park Information Center</h1>
+            <p class="lead">We can help you gather almost any information you'd like to see, regarding beautiful United States National Parks.</p>
+            <hr class="my-4">
+            <p>To get started, first choose a State you're thinking of visiting:</p>
+            <div class="dropdownWrapper row">
+                <div id="state" class="col-lg-3">
+                    <label>Choose a State:</label><br>  
+                    <select id="stateList">
+                        <option value="" selected disabled hidden required>--Choose State--</option>
+                    </select>
+                </div>
+                <div id="park" class="col-lg-3">
+                    <label>Choose a Park:</label><br>
+                    <select id="parkList">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="parkInfo">
+        <div class="infoWrapper row">
+            <div class="col-sm-10">
+                <h2 id="parkName"></h2>
+                <p id="parkDesc"></p>
+                <p id="parkWeather"></p>
+            </div>  
+        </div>
+
+        <div class="basicLocationWrapper row">
+            <div class="location col-sm-5">
+                <h2>Park Location:</h2>
+                <a id="googleMapsLink" href="" target="_blank"><p id="parkAddress"></p></a>
+                <p id="parkDirections"></p>
+            </div>
+            <div class="fees col-sm-5">
+                <h2>Entry Fees:</h2>
+                <div id="parkFees"></div>
+            </div>
+        </div>
+
+        <div class="activityWrapper row">
+            <div class="activities col-sm-3">
+                <h2>Activities:</h2>
+                <ul id="parkActivities"></ul>
+            </div>
+
+            <div class="images col-sm-7">
+                <div id="imgCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" id="carousel-indicators">
+                    </ol>
+                    <div class="carousel-inner" id="carousel-inner">
+                    </div>
+                    <a class="carousel-control-prev" href="#imgCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imgCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>  
+        </div>  
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

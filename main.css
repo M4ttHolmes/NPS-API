@@ -1,0 +1,84 @@
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: .8em !important;
+    }
+
+    h1 {
+        font-size: 2em !important;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 1.5em !important;
+        font-weight: 600;
+    }
+    
+    [class*="col-"] {
+      width: 100%;
+    }
+    #state, #park {
+        margin-left: -50px;
+    }
+  }
+
+body {
+    background-color: #fffff0;
+}
+
+select {
+    max-width: 275px;
+}
+
+.jumbotron {
+    color: white;
+    background: url(https://images.unsplash.com/photo-1545063168-0e149bddf68c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80) no-repeat;
+    background-size: cover; 
+    padding: 0;
+}
+
+.overlay {
+    padding: 25px 50px 50px 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.row {
+    margin: 20px;
+}
+
+[class*="col-"] {
+    padding: 20px;
+    margin: 0;
+  }
+
+.infoWrapper, .basicLocationWrapper, .activityWrapper  {
+    justify-content: center;
+}
+
+img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.dropdownWrapper {
+    margin-top: 40px;
+}
+
+#parkInfo {
+    display: flex;
+}
+
+
+#parkFees ul {
+    font-weight: 600
+}
+
+#parkFees ul li {
+    margin-left: 30px;
+    font-weight: 400;
+}
+
+.carousel-indicators li {
+    cursor: default;
+}
